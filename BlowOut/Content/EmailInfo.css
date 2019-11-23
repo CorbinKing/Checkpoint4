@@ -1,0 +1,38 @@
+﻿table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.tbs {
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: ivory;
+    color: black;
+    font: bold;
+}
+
+h1 {
+    box-sizing: content-box;
+    width: 75%;
+    background-color: ivory;
+    color: black;
+    border-radius: 20px;
+}
+
+.buttons {
+    background-color: ivory; /* Green */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

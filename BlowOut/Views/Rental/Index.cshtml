@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <link href="~/Content/RentalStyle.css" rel="stylesheet" />
+</head>
+
+    <body>
+        <div class="row">
+            <div class="column">
+                <a href='@Url.Action("Trumpet", "Rental")'>
+                    <img class="image" src='@Url.Content("~/Content/Images/Trumpet.jpg")' />
+                </a>
+            </div>
+            <div class="column">
+                <a href='@Url.Action("Clarinet", "Rental")'>
+                    <img class="image" src='@Url.Content("~/Content/Images/clarinet.jpg")' />
+                </a>
+            </div>
+                <div class="column">
+                    <a href='@Url.Action("Flute", "Rental")'>
+                        <img class="image" src='@Url.Content("~/Content/Images/Flute.jpg")'  />
+                    </a>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="column">
+                <a href='@Url.Action("Tuba", "Rental")'>
+                    <img class="image" src='@Url.Content("~/Content/Images/Tuba.jpg")' />
+                </a>
+            </div>
+            <div class="column">
+                <a href='@Url.Action("Saxophone", "Rental")'>
+                    <img class="image" src='@Url.Content("~/Content/Images/Saxaphone.png")' />
+                </a>
+            </div>
+            <div class="column">
+                <a href='@Url.Action("Trombone", "Rental")'>
+                    <img class="image"  src='@Url.Content("~/Content/Images/trumbone.jpg")' />
+                </a>
+            </div>
+        </div>
+    </body>
+

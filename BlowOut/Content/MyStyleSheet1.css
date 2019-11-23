@@ -1,0 +1,11 @@
+﻿body {
+    background-image: url('Images/GuitarBGjpg.jpg');
+}
+
+.myFooterText {
+    font-family: "Georgia", serif;
+}
+
+.row{
+    background-color:rgb(78, 93, 108);
+}

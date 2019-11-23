@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <link href="~/Content/email.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <br />
+        <p x-ms-format-detection="none">Please call Support at <b><u>801-555-1212</u></b>. Thank you!>
+        <br />
+        @Html.ActionLink("Send An Email", "Index", "Gmail", null, new { @class = "btn btn-success" })
+    </div>
+
+</body>
+
+

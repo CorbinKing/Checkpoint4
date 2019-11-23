@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Blow Out!";
+}
+
+<!--Jake Saylor, Corbin King, Michael Jenkins, Peter Maddsen-->
+<head>
+    <link href="~/Content/MyStyleSheet1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Welcome To Blow Out</h1>
+        <p class="lead">We blow our competitors out of the water</p>
+        <p><a href="@Url.Action("Index", "Rental")" class="btn btn-primary btn-lg">RENT NOW! &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>What We Do</h2>
+            <p> BlowOut offers the highest quality of instrument rentals. We offer rentals of new and used equipment at competitive prices.</p>
+            <p><a class="btn btn-default" href="@Url.Action("Index", "Rental")">Rentals &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Music is Key</h2>
+            <p>
+                <i>"It's easy to play any musical instrument: all you have to do is touch the right key at the right time and the instrument will play itself”.</i> <br />  - Johann Sebastian Bach
+            </p>
+            <p><a class="btn btn-default" href="@Url.Action("Index", "About")">About Us &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>We'd love to answer any questions you have. We have rental support by phone and email from 8am to 5pm Monday to Friday</p>
+            <p><a class="btn btn-default" href="@Url.Action("Index", "Contact")">Contact &raquo;</a></p>
+        </div>
+    </div>
+</body>
