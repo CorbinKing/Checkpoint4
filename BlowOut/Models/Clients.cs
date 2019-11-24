@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Authors: Corbin King, Jake Saylor, Mikey Jenkins, Peter Madsen
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -10,6 +12,7 @@ namespace BlowOut.Models
     [Table("Clients")]
     public class Clients
     {
+        //Attributes for clients matching the DB object
         [Key]
         public int clientID { get; set; }
 

@@ -1,4 +1,6 @@
-﻿@model IEnumerable<BlowOut.Models.Instruments>
+﻿<!--Jake Saylor, Corbin King, Michael Jenkins, Peter Maddsen-->
+
+@model IEnumerable<BlowOut.Models.Instruments>
 
 <h2>Rentals</h2>
 
@@ -17,7 +19,7 @@
         {
             <tr>
                 <td>
-                    <img src="~/Content/Images/@(item.instrumentDesc).jpg" style="width: 100px; height: auto;"/>
+                    <img src="~/Content/Images/@(item.instrumentDesc).jpg" style="width: 100px; height: auto;" />
                     @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
                 </td>
                 <td>

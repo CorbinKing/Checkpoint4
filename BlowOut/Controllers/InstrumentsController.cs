@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Authors: Corbin King, Jake Saylor, Mikey Jenkins, Peter Madsen
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
