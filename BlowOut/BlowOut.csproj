@@ -144,6 +144,7 @@
     <Content Include="Content\Images\Clarinet.jpg" />
     <Content Include="Content\Images\Flute.jpg" />
     <Content Include="Content\Images\GuitarBGjpg.jpg" />
+    <Content Include="Content\Images\Gus.jpg" />
     <Content Include="Content\Images\Saxophone.jpg" />
     <Content Include="Content\Images\Trombone.jpg" />
     <Content Include="Content\Images\Trumpet.jpg" />
