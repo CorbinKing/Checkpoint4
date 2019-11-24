@@ -5,7 +5,7 @@
 
 <div class="jumbotron">
     <p>
-        @Html.ActionLink("Create New", "Create", "Instruments")
+        @Html.ActionLink("Add New Instrument", "Create", "Instruments")
     </p>
     <table class="table">
         <tr>
@@ -17,6 +17,7 @@
         {
             <tr>
                 <td>
+                    <img src="~/Content/Images/@(item.instrumentDesc).jpg" style="width: 100px; height: auto;"/>
                     @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
                 </td>
                 <td>
