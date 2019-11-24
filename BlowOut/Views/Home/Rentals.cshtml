@@ -2,12 +2,14 @@
 
 <h2>Rentals</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create", "Instruments")
-</p>
+<div class="jumbotron">
+    <p>
+        @Html.ActionLink("Create New", "Create", "Instruments")
+    </p>
 
     @foreach (var item in Model)
     {
         @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
         <br />
     }
+</div>
