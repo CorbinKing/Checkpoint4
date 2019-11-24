@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h2>Summary</h2>
+
+<p>
+    Thank You @ViewBag.client.clientFirstName!
+</p>
+
+<p>
+    Order/Rental Info<br />
+    Order ID: @ViewBag.client.clientID<br />
+    Instrument: @ViewBag.instrument.instrumentDesc<br />
+    Instrument Type: @ViewBag.instrument.instrumentType<br />
+    Instrument Monthly Price: $@ViewBag.instrument.instrumentPrice<br />
+    Total after 18 months: $@(System.Convert.ToInt32(ViewBag.instrument.instrumentPrice) * 18)<br />
+    Image of your instrument:<br />
+    <img src="~/Content/Images/@(ViewBag.instrument.instrumentDesc).jpg"/>
+
+
+</p>
