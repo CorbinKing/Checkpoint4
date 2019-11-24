@@ -2,14 +2,37 @@
 
 <h2>Rentals</h2>
 
+
 <div class="jumbotron">
     <p>
         @Html.ActionLink("Create New", "Create", "Instruments")
     </p>
-
-    @foreach (var item in Model)
-    {
-        @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
-        <br />
-    }
+    <table class="table">
+        <tr>
+            <th>Instrument</th>
+            <th>Condition</th>
+            <th>Status</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
+                </td>
+                <td>
+                    @Html.Raw(item.instrumentType)
+                </td>
+                <td>
+                    @if (item.clientID == 0)
+                    {
+                        @Html.Raw("Available")
+                    }
+                    else
+                    {
+                        @Html.Raw("Rented")
+                    }
+                </td>
+            </tr>
+        }
+    </table>
 </div>
