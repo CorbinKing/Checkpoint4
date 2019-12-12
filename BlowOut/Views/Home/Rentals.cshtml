@@ -17,7 +17,7 @@
         {
             <tr>
                 <td>
-                    <img src="~/Content/Images/@(item.instrumentDesc).jpg" style="width: 100px; height: auto;"/>
+                    <img src="~/Content/Images/@(item.instrumentDesc).jpg" style="width: 100px; height: auto; border-radius: 5%;"/>
                     @Html.ActionLink(item.instrumentDesc, "Create", new { id = item.instrumentID })
                 </td>
                 <td>

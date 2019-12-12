@@ -18,3 +18,9 @@ img {
     border-radius: 20%;
     border: 3px solid black;
 }
+
+#rentalsImage {
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
+}
