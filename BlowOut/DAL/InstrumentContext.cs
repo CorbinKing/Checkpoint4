@@ -1,4 +1,6 @@
-﻿using BlowOut.Models;
+﻿////Authors: Corbin King, Jake Saylor, Mikey Jenkins, Peter Madsen
+
+using BlowOut.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -9,6 +11,7 @@ namespace BlowOut.DAL
 {
     public class InstrumentContext :DbContext
     {
+        //Create Context class to configure with DB
         public InstrumentContext() : base("InstrumentContext")
         {
 

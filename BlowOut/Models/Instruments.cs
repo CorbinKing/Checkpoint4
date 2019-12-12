@@ -1,4 +1,6 @@
-﻿using BlowOut.Models.Validations;
+﻿//Authors: Corbin King, Jake Saylor, Mikey Jenkins, Peter Madsen
+
+using BlowOut.Models.Validations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,6 +10,7 @@ using System.Web;
 
 namespace BlowOut.Models
 {
+    //Attributes for instruments matching the DB object
     [Table("Instruments")]
     public class Instruments
     {

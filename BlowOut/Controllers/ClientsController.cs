@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Authors: Corbin King, Jake Saylor, Mikey Jenkins, Peter Madsen
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -13,9 +15,10 @@ namespace BlowOut.Controllers
 {
     public class ClientsController : Controller
     {
+        //create db variable
         private InstrumentContext db = new InstrumentContext();
 
-        // GET: Clients
+        // Get list of clients
         public ActionResult Index()
         {
             return View(db.Clients.ToList());
